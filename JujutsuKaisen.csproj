@@ -78,7 +78,7 @@
     <None Include="Resources\Italic.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sukuna.full.3254300.png" />
+    <None Include="Resources\Sukuna.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

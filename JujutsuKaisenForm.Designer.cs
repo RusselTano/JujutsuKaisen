@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JujutsuKaisenForm));
             this.styleGroupBox = new System.Windows.Forms.GroupBox();
             this.fontComboBox = new System.Windows.Forms.ComboBox();
@@ -35,16 +36,17 @@
             this.douzeRadioButton = new System.Windows.Forms.RadioButton();
             this.quatorzeRadioButton = new System.Windows.Forms.RadioButton();
             this.huitRadioButton = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.jujutsuKaisenGroupBox = new System.Windows.Forms.GroupBox();
             this.infoJujutsuKaisenLabel = new System.Windows.Forms.Label();
-            this.jujutsuKaisenPictureBox = new System.Windows.Forms.PictureBox();
+            this.sukunaTimer = new System.Windows.Forms.Timer(this.components);
+            this.dessinPictureBox = new System.Windows.Forms.PictureBox();
+            this.sukunaPictureBox = new System.Windows.Forms.PictureBox();
             this.italicCheckBox = new System.Windows.Forms.CheckBox();
             this.boldCheckBox = new System.Windows.Forms.CheckBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.jujutsuKaisenFontDialog = new System.Windows.Forms.FontDialog();
             this.styleGroupBox.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.jujutsuKaisenPictureBox)).BeginInit();
+            this.jujutsuKaisenGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dessinPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sukunaPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // styleGroupBox
@@ -116,15 +118,15 @@
             this.huitRadioButton.UseVisualStyleBackColor = true;
             this.huitRadioButton.CheckedChanged += new System.EventHandler(this.SizeRadioButton_CheckedChanged);
             // 
-            // groupBox2
+            // jujutsuKaisenGroupBox
             // 
-            this.groupBox2.Controls.Add(this.infoJujutsuKaisenLabel);
-            this.groupBox2.Location = new System.Drawing.Point(504, 37);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(373, 325);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Jujutsu Kaisen";
+            this.jujutsuKaisenGroupBox.Controls.Add(this.infoJujutsuKaisenLabel);
+            this.jujutsuKaisenGroupBox.Location = new System.Drawing.Point(504, 37);
+            this.jujutsuKaisenGroupBox.Name = "jujutsuKaisenGroupBox";
+            this.jujutsuKaisenGroupBox.Size = new System.Drawing.Size(373, 310);
+            this.jujutsuKaisenGroupBox.TabIndex = 1;
+            this.jujutsuKaisenGroupBox.TabStop = false;
+            this.jujutsuKaisenGroupBox.Text = "Jujutsu Kaisen";
             // 
             // infoJujutsuKaisenLabel
             // 
@@ -132,23 +134,38 @@
             this.infoJujutsuKaisenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoJujutsuKaisenLabel.Location = new System.Drawing.Point(23, 37);
             this.infoJujutsuKaisenLabel.Name = "infoJujutsuKaisenLabel";
-            this.infoJujutsuKaisenLabel.Size = new System.Drawing.Size(323, 260);
+            this.infoJujutsuKaisenLabel.Size = new System.Drawing.Size(323, 248);
             this.infoJujutsuKaisenLabel.TabIndex = 0;
             this.infoJujutsuKaisenLabel.Text = "shonen manga\r\nGege Akutami\r\nWeekly Shonen Jump\r\nMars 2018\r\nShueisha\r\nMappa";
             // 
-            // jujutsuKaisenPictureBox
+            // sukunaTimer
             // 
-            this.jujutsuKaisenPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.sukunaTimer.Enabled = true;
+            this.sukunaTimer.Tick += new System.EventHandler(this.sukunaTimer_Tick);
+            // 
+            // dessinPictureBox
+            // 
+            this.dessinPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.jujutsuKaisenPictureBox.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.jujutsuKaisenPictureBox.Image = global::JujutsuKaisen.Properties.Resources.Sukuna_full_3254300;
-            this.jujutsuKaisenPictureBox.Location = new System.Drawing.Point(718, 410);
-            this.jujutsuKaisenPictureBox.Name = "jujutsuKaisenPictureBox";
-            this.jujutsuKaisenPictureBox.Size = new System.Drawing.Size(159, 164);
-            this.jujutsuKaisenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.jujutsuKaisenPictureBox.TabIndex = 1;
-            this.jujutsuKaisenPictureBox.TabStop = false;
+            this.dessinPictureBox.BackColor = System.Drawing.SystemColors.Info;
+            this.dessinPictureBox.Location = new System.Drawing.Point(3, 368);
+            this.dessinPictureBox.Name = "dessinPictureBox";
+            this.dessinPictureBox.Size = new System.Drawing.Size(923, 235);
+            this.dessinPictureBox.TabIndex = 2;
+            this.dessinPictureBox.TabStop = false;
+            this.dessinPictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.dessinPictureBox_Paint);
+            // 
+            // sukunaPictureBox
+            // 
+            this.sukunaPictureBox.BackColor = System.Drawing.Color.White;
+            this.sukunaPictureBox.Image = global::JujutsuKaisen.Properties.Resources.Sukuna;
+            this.sukunaPictureBox.Location = new System.Drawing.Point(3, 624);
+            this.sukunaPictureBox.Name = "sukunaPictureBox";
+            this.sukunaPictureBox.Size = new System.Drawing.Size(145, 151);
+            this.sukunaPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sukunaPictureBox.TabIndex = 1;
+            this.sukunaPictureBox.TabStop = false;
             // 
             // italicCheckBox
             // 
@@ -177,9 +194,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(927, 620);
-            this.Controls.Add(this.jujutsuKaisenPictureBox);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(927, 776);
+            this.Controls.Add(this.dessinPictureBox);
+            this.Controls.Add(this.sukunaPictureBox);
+            this.Controls.Add(this.jujutsuKaisenGroupBox);
             this.Controls.Add(this.styleGroupBox);
             this.Name = "JujutsuKaisenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -187,8 +205,9 @@
             this.Load += new System.EventHandler(this.JujutsuKaisenForm_Load);
             this.styleGroupBox.ResumeLayout(false);
             this.styleGroupBox.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.jujutsuKaisenPictureBox)).EndInit();
+            this.jujutsuKaisenGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dessinPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sukunaPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -196,7 +215,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox styleGroupBox;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox jujutsuKaisenGroupBox;
         private System.Windows.Forms.Label infoJujutsuKaisenLabel;
         private System.Windows.Forms.RadioButton dixRadioButton;
         private System.Windows.Forms.RadioButton douzeRadioButton;
@@ -205,9 +224,9 @@
         private System.Windows.Forms.ComboBox fontComboBox;
         private System.Windows.Forms.CheckBox boldCheckBox;
         private System.Windows.Forms.CheckBox italicCheckBox;
-        private System.Windows.Forms.PictureBox jujutsuKaisenPictureBox;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.FontDialog jujutsuKaisenFontDialog;
+        private System.Windows.Forms.PictureBox sukunaPictureBox;
+        private System.Windows.Forms.Timer sukunaTimer;
+        private System.Windows.Forms.PictureBox dessinPictureBox;
     }
 }
 

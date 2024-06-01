@@ -83,9 +83,9 @@ namespace JujutsuKaisen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sukuna_full_3254300 {
+        internal static System.Drawing.Bitmap Sukuna {
             get {
-                object obj = ResourceManager.GetObject("Sukuna_full_3254300", resourceCulture);
+                object obj = ResourceManager.GetObject("Sukuna", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

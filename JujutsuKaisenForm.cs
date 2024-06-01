@@ -29,6 +29,7 @@ namespace JujutsuKaisen
             InitializeFontComboBox();
 
             quatorzeRadioButton.Checked = true;
+            sukunaPictureBox.Location = new Point(-sukunaPictureBox.Width, this.ClientSize.Height - sukunaPictureBox.Height);
         }
         #endregion
 
@@ -72,7 +73,7 @@ namespace JujutsuKaisen
                     fontStyle = FontStyle.Bold;
                 else if (italicCheckBox.Checked)
                     fontStyle = FontStyle.Italic;
-                else 
+                else
                     fontStyle = FontStyle.Regular;
 
                 infoJujutsuKaisenLabel.Font = new Font(fontFamily, fontSize, fontStyle);
@@ -99,5 +100,42 @@ namespace JujutsuKaisen
             infoJujutsuKaisenLabel.Font = new Font(fontFamily, fontSize, fontStyle);
         }
         #endregion
+
+        #region Dessins
+        private void dessinPictureBox_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+
+            // Dessin des lignes Methode 4
+            Point pointOrigine = new Point(0, 0);
+            for (int i = 0; i < dessinPictureBox.Width; i += 10)
+                g.DrawLine(Pens.Violet, pointOrigine, new Point(i, dessinPictureBox.Height));
+
+            // Dessiner le titre
+            string title = "Jujutsu Kaisen";
+            Font titleFont = new Font("Tahoma", 40);
+            Point titlePosition = new Point(10, 10);
+            g.DrawString(title, titleFont, Brushes.Crimson, titlePosition);
+
+            // Dessiner l'image dans le coin supérieur droit
+            int x = dessinPictureBox.Width - sukunaPictureBox.Width - 20; 
+            int y = 10; 
+            Rectangle destRect = new Rectangle(x, y, 145, 151);
+            e.Graphics.DrawImage(sukunaPictureBox.Image, destRect);
+        }
+        #endregion
+
+        #region Animation
+        private void sukunaTimer_Tick(object sender, EventArgs e)
+        {
+            int positionx = sukunaPictureBox.Location.X + 2;
+
+            if (positionx > this.ClientSize.Width)
+                positionx = -sukunaPictureBox.Width;
+
+            sukunaPictureBox.Location = new Point(positionx, sukunaPictureBox.Location.Y);
+        }
+        #endregion
     }
+
 }
