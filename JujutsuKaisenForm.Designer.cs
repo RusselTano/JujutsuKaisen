@@ -37,13 +37,14 @@
             this.huitRadioButton = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.infoJujutsuKaisenLabel = new System.Windows.Forms.Label();
-            this.jujutsuKaisenFontDialog = new System.Windows.Forms.FontDialog();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.jujutsuKaisenPictureBox = new System.Windows.Forms.PictureBox();
             this.italicCheckBox = new System.Windows.Forms.CheckBox();
             this.boldCheckBox = new System.Windows.Forms.CheckBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.jujutsuKaisenFontDialog = new System.Windows.Forms.FontDialog();
             this.styleGroupBox.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jujutsuKaisenPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // styleGroupBox
@@ -135,16 +136,19 @@
             this.infoJujutsuKaisenLabel.TabIndex = 0;
             this.infoJujutsuKaisenLabel.Text = "shonen manga\r\nGege Akutami\r\nWeekly Shonen Jump\r\nMars 2018\r\nShueisha\r\nMappa";
             // 
-            // pictureBox1
+            // jujutsuKaisenPictureBox
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox1.Image = global::JujutsuKaisen.Properties.Resources._48081906ac934323ecb75a3a4597869d;
-            this.pictureBox1.Location = new System.Drawing.Point(718, 410);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 164);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.jujutsuKaisenPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.jujutsuKaisenPictureBox.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.jujutsuKaisenPictureBox.Image = global::JujutsuKaisen.Properties.Resources.Sukuna_full_3254300;
+            this.jujutsuKaisenPictureBox.Location = new System.Drawing.Point(718, 410);
+            this.jujutsuKaisenPictureBox.Name = "jujutsuKaisenPictureBox";
+            this.jujutsuKaisenPictureBox.Size = new System.Drawing.Size(159, 164);
+            this.jujutsuKaisenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.jujutsuKaisenPictureBox.TabIndex = 1;
+            this.jujutsuKaisenPictureBox.TabStop = false;
             // 
             // italicCheckBox
             // 
@@ -174,7 +178,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(927, 620);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.jujutsuKaisenPictureBox);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.styleGroupBox);
             this.Name = "JujutsuKaisenForm";
@@ -184,7 +188,7 @@
             this.styleGroupBox.ResumeLayout(false);
             this.styleGroupBox.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jujutsuKaisenPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -199,10 +203,11 @@
         private System.Windows.Forms.RadioButton quatorzeRadioButton;
         private System.Windows.Forms.RadioButton huitRadioButton;
         private System.Windows.Forms.ComboBox fontComboBox;
-        private System.Windows.Forms.FontDialog jujutsuKaisenFontDialog;
         private System.Windows.Forms.CheckBox boldCheckBox;
         private System.Windows.Forms.CheckBox italicCheckBox;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox jujutsuKaisenPictureBox;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.FontDialog jujutsuKaisenFontDialog;
     }
 }
 

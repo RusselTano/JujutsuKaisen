@@ -121,25 +121,10 @@
   <data name="Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bold.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Font_B_svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Font_B.svg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hd_sukuna_jujutsu_kaisen_anime_png_704081694682953k7zel2aikn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hd-sukuna-jujutsu-kaisen-anime-png-704081694682953k7zel2aikn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Italic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Italic.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="italique" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\italique.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Sukuna_full_3254300" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sukuna.full.3254300.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_48081906ac934323ecb75a3a4597869d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\48081906ac934323ecb75a3a4597869d.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_776b4e2558f664174917c6980fd8c000" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\776b4e2558f664174917c6980fd8c000.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

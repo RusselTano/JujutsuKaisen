@@ -56,7 +56,7 @@ namespace JujutsuKaisen
             }
             catch
             {
-                this.Font = new Font(this.Font.FontFamily, this.Font.Size, this.Font.Style);
+                infoJujutsuKaisenLabel.Font = new Font(this.Font.FontFamily, this.Font.Size, this.Font.Style);
             }
         }
         #endregion
@@ -72,12 +72,14 @@ namespace JujutsuKaisen
                     fontStyle = FontStyle.Bold;
                 else if (italicCheckBox.Checked)
                     fontStyle = FontStyle.Italic;
+                else 
+                    fontStyle = FontStyle.Regular;
 
                 infoJujutsuKaisenLabel.Font = new Font(fontFamily, fontSize, fontStyle);
             }
             catch
             {
-                this.Font = new Font(this.Font.FontFamily, this.Font.Size, FontStyle.Regular);
+                infoJujutsuKaisenLabel.Font = new Font(this.Font.FontFamily, this.Font.Size, FontStyle.Regular);
             }
         }
         #endregion

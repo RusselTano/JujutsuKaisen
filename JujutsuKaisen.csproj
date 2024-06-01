@@ -75,23 +75,7 @@
     <None Include="Resources\Bold.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\il_fullxfull.3873690406_ngee.webp" />
     <None Include="Resources\Italic.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Font_B.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\italique.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\776b4e2558f664174917c6980fd8c000.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\48081906ac934323ecb75a3a4597869d.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hd-sukuna-jujutsu-kaisen-anime-png-704081694682953k7zel2aikn.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sukuna.full.3254300.png" />
