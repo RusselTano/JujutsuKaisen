@@ -93,5 +93,8 @@
   <ItemGroup>
     <None Include="Resources\hd-sukuna-jujutsu-kaisen-anime-png-704081694682953k7zel2aikn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sukuna.full.3254300.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

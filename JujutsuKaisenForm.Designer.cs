@@ -137,14 +137,13 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.pictureBox1.BackgroundImage = global::JujutsuKaisen.Properties.Resources.hd_sukuna_jujutsu_kaisen_anime_png_704081694682953k7zel2aikn;
-            this.pictureBox1.Image = global::JujutsuKaisen.Properties.Resources.hd_sukuna_jujutsu_kaisen_anime_png_704081694682953k7zel2aikn;
-            this.pictureBox1.Location = new System.Drawing.Point(668, 392);
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pictureBox1.Image = global::JujutsuKaisen.Properties.Resources._48081906ac934323ecb75a3a4597869d;
+            this.pictureBox1.Location = new System.Drawing.Point(718, 410);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(209, 216);
+            this.pictureBox1.Size = new System.Drawing.Size(159, 164);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // italicCheckBox
@@ -173,6 +172,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(927, 620);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);

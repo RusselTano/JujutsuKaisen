@@ -63,49 +63,9 @@ namespace JujutsuKaisen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _48081906ac934323ecb75a3a4597869d {
-            get {
-                object obj = ResourceManager.GetObject("_48081906ac934323ecb75a3a4597869d", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _776b4e2558f664174917c6980fd8c000 {
-            get {
-                object obj = ResourceManager.GetObject("_776b4e2558f664174917c6980fd8c000", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Bold {
             get {
                 object obj = ResourceManager.GetObject("Bold", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Font_B_svg {
-            get {
-                object obj = ResourceManager.GetObject("Font_B_svg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap hd_sukuna_jujutsu_kaisen_anime_png_704081694682953k7zel2aikn {
-            get {
-                object obj = ResourceManager.GetObject("hd_sukuna_jujutsu_kaisen_anime_png_704081694682953k7zel2aikn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +83,9 @@ namespace JujutsuKaisen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap italique {
+        internal static System.Drawing.Bitmap Sukuna_full_3254300 {
             get {
-                object obj = ResourceManager.GetObject("italique", resourceCulture);
+                object obj = ResourceManager.GetObject("Sukuna_full_3254300", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
