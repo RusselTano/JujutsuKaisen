@@ -118,7 +118,7 @@ namespace JujutsuKaisen
             g.DrawString(title, titleFont, Brushes.Crimson, titlePosition);
 
             // Dessiner l'image dans le coin supérieur droit
-            int x = dessinPictureBox.Width - sukunaPictureBox.Width - 20; 
+            int x = dessinPictureBox.Width - sukunaPictureBox.Width - 50; 
             int y = 10; 
             Rectangle destRect = new Rectangle(x, y, 145, 151);
             e.Graphics.DrawImage(sukunaPictureBox.Image, destRect);
